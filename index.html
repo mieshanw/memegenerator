@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Meme Me!</title>
-<link rel="stylesheet" href="css/main.css" type="text/css" /> 
+<title>Meme Gen!</title>
+<link rel="stylesheet" href="main.css" type="text/css" /> 
 </head>
 <body>
-<div class="header">
-</div>
-<div class="main">
-</div>
+<p>
+<canvas id="memecanvas" style="border: 1px dashed grey;" width="500" height="500"></canvas>
+<br />
+<span id="controls">
+<br />
+Scale <input id="scale" style="width: 40%;" max="4" min="0.05" step="0.01" type="range" value="1" />
+<br />
+<input id="rotate" style="width: 40%;" max="180" min="-180" step="1" type="range" value="0" /> Rotate
+<br />
+<input id="custom-text" style="width: 40%;" type="text" value="your message" />
+<br />
+<span style="width: 50%; float: left;">Load image: <input id="fileInput" name="imageLoader" type="file" /></span>
+<br />
+<br />
+</span>
+<br />
+<br />
+</p>
+<p><img id="default-image" style="display: none;" src="text.jpg" alt="" /></p>
 </body>
 </html>
